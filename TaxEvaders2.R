@@ -1,0 +1,6 @@
+Tax <-read.csv("Data_TaxEvadersEdited.csv")
+attach(Tax)
+plot(TV,Radio)
+abline(lm(TV~Radio), col="red") # regression line (y~x)
+cor(TV, Radio)
+lm(TV~Radio)
